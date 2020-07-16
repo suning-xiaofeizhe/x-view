@@ -1,0 +1,57 @@
+
+/* router */
+.router-transition-enter {
+  opacity: 0;
+}
+
+.router-transition-enter-active {
+  transition: all 0.3s ease;
+}
+
+.router-transition-leave {
+  opacity: 0;
+  position: absolute;
+  z-index: -9999;
+}
+
+
+/* common components */
+.common-transition-enter {
+  /* transform: rotate(20deg); */
+  /* transform: scale(.8); */
+  /* transform: skewX(-5deg); */
+  /* transform: perspective(300px) rotateX(-10deg); */
+  /* transform: translateX(-5px); */
+  opacity: 0;
+}
+
+.common-transition-right-enter {
+  transform: translateX(-5px);
+  opacity: 0;
+}
+
+.common-transition-up-enter {
+  transform: translateY(5px);
+  opacity: 0;
+}
+
+.common-transition-down-enter {
+  transform: translateY(-5px);
+  opacity: 0;
+}
+
+.common-transition-right-enter-active,
+.common-transition-up-enter-active,
+.common-transition-down-enter-active,
+.common-transition-enter-active {
+  transition: all 0.3s ease;
+}
+
+.common-transition-right-leave,
+.common-transition-up-leave,
+.common-transition-down-leave,
+.common-transition-leave {
+  opacity: 0;
+  position: absolute;
+  z-index: -9999;
+}
